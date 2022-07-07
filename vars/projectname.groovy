@@ -12,3 +12,7 @@ def get_project_uri(uri) {
 def get_project_path(projectUri) {
     return env.WORKSPACE + ".\\..\\" + projectUri;
 }
+
+def vtn_unity_path() {
+    return "C:\Program Files\Unity\Hub\Editor";   
+}
