@@ -13,6 +13,15 @@ def get_project_path(projectUri) {
     return env.WORKSPACE + ".\\..\\" + projectUri;
 }
 
-def vtn_unity_path() {
-    return "C:\Program Files\Unity\Hub\Editor";   
+def vtn_unity_path(version, isLinux = false) {
+    if(isLinux)
+    {
+        return "C:\\Program Files\\Unity\\Hub\\Editor\\" + version + "\\Editor\\Unity";   
+    }else{
+        return "C:\\Program Files\\Unity\\Hub\\Editor\\" + version + "\\Editor\\Unity.exe";   
+    }
+}
+
+def vtn_workspace_path(prjName) {
+    return "C:\\Jenkins\\workspace\\"
 }
