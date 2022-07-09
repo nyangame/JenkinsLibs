@@ -23,5 +23,5 @@ def vtn_unity_path(version, isLinux = false) {
 }
 
 def vtn_workspace_path(prjName) {
-    return "C:\\Jenkins\\workspace\\"
+    return "C:\\Jenkins\\workspace\\" + prjName
 }
