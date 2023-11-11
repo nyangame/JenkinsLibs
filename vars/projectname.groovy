@@ -5,7 +5,6 @@ def get_project_uri(uri) {
     projectUri = projectUri.replaceFirst(/www\./,"")
     projectUri = projectUri.replaceFirst(/github\.com\//,"")
     projectUri = projectUri.replaceFirst(/github\.com\:/,"")
-    projectUri = projectUri.replaceFirst(/MELPOT\//,"")
     return projectUri;
 }
 
